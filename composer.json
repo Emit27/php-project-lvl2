@@ -1,0 +1,11 @@
+{
+    "name": "project_2/php-project-lvl2",
+    "description": "package",
+    "authors": [
+        {
+            "name": "emit",
+            "email": "emit580@gmail.com"
+        }
+    ],
+    "require": {}
+}
