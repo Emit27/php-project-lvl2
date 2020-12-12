@@ -5,9 +5,20 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "emit",
+            "name": "Dmitriy I",
             "email": "emit580@gmail.com"
         }
     ],
-    "require": {}
+    "bin": [
+        "bin/gendiff"
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "src/cli.php"
+        ]
+    },
+    "require": {
+        "docopt/docopt": "^1.0"
+    }
 }
