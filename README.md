@@ -8,12 +8,12 @@
 
 Differ - utility for finding differences in files relative to each other.
 
-# Help
+**Help**
 
 gendiff -h
 
-# Installation
+**Installation**
 
-composer require Emit/php-project-lvl2
+composer require emit/php-project-lvl2
 
 #### Comparison of flat files (json)
