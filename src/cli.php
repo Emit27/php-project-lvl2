@@ -28,4 +28,15 @@ function run()
         'optionsFirst' => false,
     ];
     $arguments = \Docopt::handle($doc, $params)->args;
+
+    ['<firstFile>' => $pathToFile1,
+    '<secondFile>' => $pathToFile2,
+    '--format' => $outputFormat] = $arguments;
+
+    try {
+        $differ = genDiff($pathToFile1, $pathToFile2);
+        echo $differ;
+    } catch (\Exception $e) {
+        echo "Differ library error: ", $e->getMessage(), "\n";
+    }
 }

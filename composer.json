@@ -9,16 +9,24 @@
             "email": "emit580@gmail.com"
         }
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "bin": [
         "bin/gendiff"
     ],
     "minimum-stability": "dev",
     "autoload": {
         "files": [
-            "src/cli.php"
+            "src/cli.php",
+            "src/gendiff.php"
         ]
     },
     "require": {
-        "docopt/docopt": "^1.0"
+        "docopt/docopt": "^1.0",
+        "funct/funct": "^1.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
     }
 }
