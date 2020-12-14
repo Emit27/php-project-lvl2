@@ -1,7 +1,7 @@
 {
     "name": "emit/php-project-lvl2",
-    "description": "package №2",
-    "type": "project №2",
+    "description": "package_2",
+    "type": "project_2",
     "license": "MIT",
     "authors": [
         {
