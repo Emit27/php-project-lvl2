@@ -16,4 +16,4 @@ gendiff -h
 
 composer require Emit/php-project-lvl2
 
-# Пример работы пакета с файлами формата JSON:
+#### Comparison of flat files (json)
