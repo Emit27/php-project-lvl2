@@ -18,4 +18,4 @@ composer require emit/php-project-lvl2
 
 #### Comparison of flat files (json)
 
-[![asciicast](https://asciinema.org/a/S4trOvFjduTYYrdWtVcYL0G1I.svg)](https://asciinema.org/a/S4trOvFjduTYYrdWtVcYL0G1I)
+[![asciicast](https://asciinema.org/a/379059.svg)](https://asciinema.org/a/379059)
