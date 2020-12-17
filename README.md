@@ -14,7 +14,7 @@ gendiff -h
 
 **Installation**
 
-composer require emit27/php-project-lvl2
+composer require emit/php-project-lvl2
 
 #### Comparison of flat files (json)
 
