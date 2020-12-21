@@ -10,7 +10,9 @@
         }
     ],
     "scripts": {
-        "phpcs": "phpcs"
+        "phpcs": "phpcs",
+        "phpunit": "phpunit",
+        "test": "phpunit tests"
     },
     "bin": [
         "bin/gendiff"
@@ -20,13 +22,17 @@
         "files": [
             "src/cli.php",
             "src/gendiff.php"
-        ]
+        ],
+        "psr-4": {
+            "Differ\\Tests\\": "tests"
+        }
     },
     "require": {
         "docopt/docopt": "^1.0",
         "funct/funct": "^1.5"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "*"
+        "squizlabs/php_codesniffer": "*",
+        "phpunit/phpunit": "10.0.x-dev"
     }
 }

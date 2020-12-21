@@ -62,5 +62,5 @@ function genDiff($pathToFile1, $pathToFile2)
 
     $data = compareData($firstFile, $secondFile);
     $result = implode(PHP_EOL, $data);
-    return "{\r\n$result\r\n}";
+    return "{\n$result\n}\n";
 }
