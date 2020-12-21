@@ -13,10 +13,9 @@
   cacheResult="false"
   xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
 >
-   <filter>
-        <whitelist addUncoveredFilesFromWhitelist="true">
-            <!-- the files included in the clover report -->
-            <directory suffix=".php">./src</directory>
-        </whitelist>
-    </filter>
+  <coverage includeUncoveredFiles="true">
+    <include>
+      <directory suffix=".php">./src</directory>
+    </include>
+  </coverage>
 </phpunit>
