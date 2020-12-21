@@ -24,7 +24,8 @@
             "src/gendiff.php"
         ],
         "psr-4": {
-            "Differ\\Tests\\": "tests"
+            "Differ\\": "src/",
+            "Differ\\Tests\\": "tests/"
         }
     },
     "require": {
