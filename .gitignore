@@ -1,3 +1,8 @@
 /vendor/
 /.vscode/
-/.phpunit.result.cache/
+logs
+*.swo
+*.swp
+*.cache
+.phpunit.result.cache
+build
