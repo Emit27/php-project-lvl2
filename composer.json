@@ -11,7 +11,6 @@
     ],
     "scripts": {
         "phpcs": "phpcs",
-        "phpunit": "phpunit",
         "test": "phpunit tests"
     },
     "bin": [
