@@ -21,11 +21,7 @@
         "files": [
             "src/cli.php",
             "src/gendiff.php"
-        ],
-        "psr-4": {
-            "Differ\\": "src/",
-            "Differ\\Tests\\": "tests/"
-        }
+        ]
     },
     "require": {
         "docopt/docopt": "^1.0",
