@@ -1,3 +1,5 @@
+update:
+	composer update
 install:
 	composer install
 autoload:

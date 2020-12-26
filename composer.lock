@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad5b984aaf66fc4333e7beeafe865ee1",
+    "content-hash": "c119b244c928a3c127d4e18ff6b9ad82",
     "packages": [
         {
             "name": "docopt/docopt",
@@ -2038,28 +2038,27 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "dev-master",
+            "version": "4.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "9bcb29cce831a8f9b2c8aee0bba1a57445f9dbf1"
+                "reference": "a6dd8ad86680bfdfad0d44709cd9d480f27a776c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9bcb29cce831a8f9b2c8aee0bba1a57445f9dbf1",
-                "reference": "9bcb29cce831a8f9b2c8aee0bba1a57445f9dbf1",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/a6dd8ad86680bfdfad0d44709cd9d480f27a776c",
+                "reference": "a6dd8ad86680bfdfad0d44709cd9d480f27a776c",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
-                "php": ">=5.4.0"
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+                "phpunit/phpunit": "^8.0 || ^9.0"
             },
-            "default-branch": true,
             "bin": [
                 "bin/phpcs",
                 "bin/phpcbf"
@@ -2091,7 +2090,7 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2020-12-15T02:38:00+00:00"
+            "time": "2020-12-15T02:38:23+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -2148,6 +2147,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/yaml": 20,
+        "squizlabs/php_codesniffer": 20,
         "phpunit/phpunit": 20
     },
     "prefer-stable": false,
