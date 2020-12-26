@@ -16,4 +16,14 @@ class DifferTest extends TestCase
         $result = genDiff($firstFile, $secondFile);
         $this->assertEquals($expected, $result);
     }
+
+    public function testGenDiffYaml()
+    {
+        $firstFile = __DIR__ . '/fixtures/filepath1.yml';
+        $secondFile = __DIR__ . '/fixtures/filepath2.yml';
+        $expected = file_get_contents(__DIR__ . '/fixtures/resultYaml.txt');
+        $result = genDiff($firstFile, $secondFile);
+        $this->assertEquals($expected, $result);
+    }
 }
+

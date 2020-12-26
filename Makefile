@@ -1,11 +1,11 @@
-update:
-	composer update
 install:
 	composer install
 autoload:
 	composer dump-autoload
 lint:
-	composer run-script phpcs -- --standard=PSR12 src bin tests
+	composer exec --verbose phpcs -- --standard=PSR12 src tests
+lint-fix:
+	composer exec --verbose phpcbf -- --standard=PSR12 src tests
 test:
 	composer exec --verbose phpunit tests
 test-coverage:

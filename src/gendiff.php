@@ -3,6 +3,12 @@
 namespace Differ\genDiff;
 
 use function funct\Collection\union;
+use function Differ\parsers\selectParser;
+
+function getExtention($path)
+{
+    return strtolower(pathinfo($path, PATHINFO_EXTENSION));
+}
 
 function getFileContent($path)
 {
@@ -11,9 +17,9 @@ function getFileContent($path)
     if ($pathToFile === false) {
         throw new \Exception("the file cannot be read along the given path'{$path}'");
     }
-
+    $path = getExtention($path);
     $fileContent = file_get_contents($pathToFile);
-    $data = json_decode($fileContent, true);
+    $data = selectParser($fileContent, $path);
     ksort($data);
     $result = array_reduce(array_keys($data), function ($acc, $key) use ($data) {
         if (is_bool($data[$key])) {

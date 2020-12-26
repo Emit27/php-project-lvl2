@@ -27,14 +27,14 @@ function run()
         'version' => 'version 1.0.cr2',
         'optionsFirst' => false,
     ];
-    $arguments = \Docopt::handle($doc, $params)->args;
+    $arguments = \Docopt::handle($doc, $params);
 
     ['<firstFile>' => $pathToFile1,
     '<secondFile>' => $pathToFile2,
     '--format' => $outputFormat] = $arguments;
 
     try {
-        $differ = genDiff($pathToFile1, $pathToFile2);
+        $differ = genDiff($pathToFile1, $pathToFile2, $outputFormat = null);
         echo $differ;
     } catch (\Exception $e) {
         echo "Differ library error: ", $e->getMessage(), "\n";
