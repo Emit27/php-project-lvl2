@@ -19,3 +19,7 @@ composer require emit27/php-project-lvl2
 #### Comparison of flat files (json)
 
 [![asciicast](https://asciinema.org/a/379059.svg)](https://asciinema.org/a/379059)
+
+#### Comparison of flat files (yaml)
+
+[![asciicast](https://asciinema.org/a/381226.svg)](https://asciinema.org/a/381226)
