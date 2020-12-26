@@ -26,4 +26,3 @@ class DifferTest extends TestCase
         $this->assertEquals($expected, $result);
     }
 }
-
