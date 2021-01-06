@@ -12,7 +12,7 @@
     "scripts": {
         "phpcs": "phpcs",
         "phpcbf": "phpcbf",
-        "test": "phpunit"
+        "tests": "phpunit"
     },
     "bin": [
         "bin/gendiff"

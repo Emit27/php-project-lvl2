@@ -36,23 +36,19 @@ function compareData(array $file1, array $file2)
 {
     $filesUnion = union(array_keys($file1), array_keys($file2));
 
-    $result = array_reduce(
-        $filesUnion,
-        function ($acc, $item) use ($file1, $file2) {
-            if (!isset($file1[$item])) {
-                $acc[] = " + $item: {$file2[$item]}";
-            } elseif (!isset($file2[$item])) {
-                $acc[] = " - $item: {$file1[$item]}";
-            } elseif ($file1[$item] === $file2[$item]) {
-                $acc[] = "   $item: {$file2[$item]}";
-            } else {
-                $acc[] = " - $item: {$file1[$item]}";
-                $acc[] = " + $item: {$file2[$item]}";
-            }
+    $result = array_reduce($filesUnion, function ($acc, $item) use ($file1, $file2) {
+        if (!isset($file1[$item])) {
+            $acc[] = " + $item: {$file2[$item]}";
+        } elseif (!isset($file2[$item])) {
+            $acc[] = " - $item: {$file1[$item]}";
+        } elseif ($file1[$item] === $file2[$item]) {
+            $acc[] = "   $item: {$file2[$item]}";
+        } else {
+            $acc[] = " - $item: {$file1[$item]}";
+            $acc[] = " + $item: {$file2[$item]}";
+        }
             return $acc;
-        },
-        []
-    );
+    }, []);
     return $result;
 }
 
@@ -67,6 +63,6 @@ function genDiff($pathToFile1, $pathToFile2)
     }
 
     $data = compareData($firstFile, $secondFile);
-    $result = implode(PHP_EOL, $data);
+    $result = implode("\n", $data);
     return "{\n$result\n}\n";
 }
